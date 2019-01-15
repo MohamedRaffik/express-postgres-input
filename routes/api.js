@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const client = require('./client');
+const client = require('../client');
 
 router.get('/input', (req, res) => {
   client.query('select * from input_table;')
