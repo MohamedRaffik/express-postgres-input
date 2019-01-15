@@ -6,11 +6,11 @@ app.use(express.json());
 app.use('/api', api);
 
 app.get('/script.js', (req, res) => {
-  res.sendFile(__dirname + '/script.js');
+  res.sendFile(__dirname + '/scripts/script.js');
 })
 
 app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(3000, () => {
