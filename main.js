@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const api = require('./router');
+const api = require('./routes/api');
 
 app.use(express.json());
 app.use('/api', api);
