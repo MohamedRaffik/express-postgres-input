@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  </head>
+  <body>
+    <h1>Input App</h1>
+    <form onsubmit="addInput(this, event);">
+      <label for="input">Enter Input: </label>
+      <input name="input" id="input" />
+      <button>Enter</button>
+    </form>
+    <button onclick="prevInput()">Show Previous Inputs</button>
+    <script src="script.js"></script>
+  </body>
+</html>
